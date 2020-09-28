@@ -10,6 +10,7 @@ while element_index < src[row_index].count
     if item.is_a?(String)
       words << item
     end
+     element_index += 1
   end
 end
 
