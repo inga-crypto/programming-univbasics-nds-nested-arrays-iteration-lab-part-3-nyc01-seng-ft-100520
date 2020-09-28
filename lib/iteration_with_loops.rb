@@ -10,5 +10,5 @@ src.each do |items|
   end
 end
 
-[words.join(" ")]
+words.join(" ")
 end
