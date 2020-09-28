@@ -9,7 +9,8 @@ while row_index < src.count do
   while element_index < src[row_index].count do
     if src[row_index][element_index].is_a?(String)
     str += src[row_index][element_index]
-    src.join(" ")
+  end
+    
     element_index += 1
   end
   row_index += 1
