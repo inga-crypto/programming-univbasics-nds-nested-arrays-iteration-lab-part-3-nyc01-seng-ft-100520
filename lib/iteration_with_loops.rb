@@ -6,12 +6,13 @@ row_index = 0
 while row_index < src.count
 element_index = 0
 while element_index < src[row_index].count
-
+item = src
     if item.is_a?(String)
       words << item
     end
      element_index += 1
   end
+    row_index += 1
 end
 
 words.join(" ")
