@@ -1,22 +1,14 @@
 def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
-  new_arr = []
-  str = ""
-row_index = 0
-while row_index < src.count do
-  element_index = 0
-  while element_index < src[row_index].count do
-    if src[row_index][element_index].class == String
-      element = src[row_index][element_index]
-   
+words = []
+mixed_data_1.each do |items|
+  items.each do |item|
+    if item.is_a?(String)
+      words << item
+    end
   end
-    
-    element_index += 1
-  end
-  row_index += 1
 end
-new_arr << element
-new_arr.join(" ")
-new_arr
+
+[words.join(" ")]
 end
