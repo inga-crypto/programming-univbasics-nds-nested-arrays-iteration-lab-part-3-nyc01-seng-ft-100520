@@ -18,4 +18,5 @@ while row_index < src.count do
 end
 new_arr << element
 new_arr.join(" ")
+new_arr
 end
